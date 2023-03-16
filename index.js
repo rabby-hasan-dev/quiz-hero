@@ -69,7 +69,7 @@ const displayQuiz = (data) => {
       ${i + 1}
     </div>
     
-    <p class="text-gray-800 text-sm">${quiz.qustion}</p>
+    <p class="text-gray-800 text-sm">${quiz.question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
@@ -114,7 +114,9 @@ document.querySelector("#submit").addEventListener("click",  () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  //  storage reference (result after results) was null it debug me.
+  let storage = JSON.parse(localStorage.getItem("results"));
+
   if (storage) {
     localStorage.setItem(
       "results",
