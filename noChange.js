@@ -1,6 +1,7 @@
 // এই পুরো ফাইলে কেও কোন কিছু পরিবর্তন করবেন না । এইখানে কোন Bug নেই ।
 
 // Handle Timer
+// 
 const quizTimer = (dismiss) => {
   if (dismiss) {
     clearInterval(timer);

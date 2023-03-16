@@ -79,6 +79,7 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
+
 // addEventListener declaration was wrong it fixed me.
 document.querySelector("#submit").addEventListener("click",  () => {
   if (answers.length < 6) {
@@ -114,8 +115,8 @@ document.querySelector("#submit").addEventListener("click",  () => {
   }
 
   // data setting on local storage and getting data from local storage
-  //  storage reference (result after results) was null it debug me.
   let storage = JSON.parse(localStorage.getItem("results"));
+  //  storage reference (result after results) was null it debug me.
 
   if (storage) {
     localStorage.setItem(
