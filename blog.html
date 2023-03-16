@@ -6,30 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+
+    <style>
+        .heading {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: large;
+        }
+        
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Three Question & Answer Blog</h1>
+        <h1 class="heading">Three Question & Answer Blog</h1>
     </header>
     <main>
         <section class="question1">
-            <h3>What is difference between map,filter,forEach and find</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab assumenda alias expedita ratione quam
-                nemo quos tempora, facilis omnis quia non maxime delectus possimus ducimus porro eligendi reprehenderit
-                totam!</p>
+            <h3>What is difference between .map(), .forEach() and filter, find?</h3>
+            <div>
+
+                <p>
+                    <span>.map():</span>
+                    .map() executes the same code on every element in an array and returns a new array with the updated
+                    elements.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>.forEach:</span>
+                    .forEach(), is used to execute the same code on every element in an array but does not change the
+                    array and it returns undefined.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>.filter():</span>
+                    .filter() checks every element in an array to see if it meets a certain criteria and returns a new
+                    array with the elements that return truthy for the criteria.
+                </p>
+            </div>
+            <div>
+                <p>
+                    <span>.find():</span>
+                    The find() method returns the first value that matches from the collection. Once it matches the
+                    value in findings, it will not check the remaining values in the array collection.
+                </p>
+            </div>
+
         </section>
         <section class="question2">
             <h3>What is Event Loop? How to it works?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab assumenda alias expedita ratione quam
-                nemo quos tempora, facilis omnis quia non maxime delectus possimus ducimus porro eligendi reprehenderit
-                totam!</p>
+            <p>
+                The event loop allows Node. js to perform non-blocking I/O operations despite the fact that JavaScript
+                is single-threaded. It is done by assigning operations to the operating system whenever and wherever
+                possible. The event loop is the secret behind JavaScript's asynchronous programming.
+            </p>
         </section>
         <section class="question3">
-            <h3>What is difference between localStorage,SessionStorage and Cookies</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ab assumenda alias expedita ratione quam
-                nemo quos tempora, facilis omnis quia non maxime delectus possimus ducimus porro eligendi reprehenderit
-                totam!</p>
+            <h3>What is difference between localStorage,SessionStorage and Cookies?</h3>
+            <p>
+                JavaScript provides three mechanisms for storing data on the client − cookies, session storage, and
+                local storage. Each one has advantages and disadvantages.</p>
+
+            <div>
+                <span> Local storage </span> is the most recent mechanism. It allows for larger amounts of data to be
+                stored, but the data is not deleted when the browser is closed. Local storage is useful for storing data
+                that the user will need to access later, such as offline data.
+            </div>
+
+            <div>
+                <span>Session storage</span> is similar to cookies, but the data is only stored for the current session.
+                This means that the data will be deleted when the user closes the browser. Session storage is useful for
+                storing data that is sensitive, such as login credentials.
+            </div>
+
+            <div>
+                <span>Cookies</span> are the oldest and most well-known mechanism. They are simple to use and well
+                supported by browsers. However, they are limited to 4KB of data and are often used to store data that is
+                not sensitive, such as user preferences.
+            </div>
         </section>
     </main>
 </body>
